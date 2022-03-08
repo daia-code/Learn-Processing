@@ -1,0 +1,14 @@
+void setup(){
+  size(500,600);
+  background(250);
+}
+void draw(){
+   stroke(40);
+  fill(250,20,10,4);
+  rect(100,50,200,100);
+  stroke(20);
+  fill(250,100,10,4);
+  circle(100,200,50);
+  fill(150,130,100,4);
+  triangle(100,400,100,300,300,400);
+}
