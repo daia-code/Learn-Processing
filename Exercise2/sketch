@@ -1,0 +1,18 @@
+int x=300;
+int y=400;
+void setup()
+{
+ size(300,400); 
+ background(255);
+}
+void draw()
+{
+ drawRandomCircle();
+}
+void drawRandomCircle()
+{
+ int r = int(random(50));
+ noFill(); 
+ stroke(random(255), random(255), random(255));
+ ellipse(random(x), random(y), r, r);
+}
