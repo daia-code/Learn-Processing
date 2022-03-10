@@ -1,0 +1,15 @@
+void setup(){
+  size(400,600);
+  background(#FCFEFF);
+}
+void draw(){
+  noFill();
+  stroke(#39B3EA);
+  triangle(120,200,200,40,320,200);
+  stroke(#59D6A0);
+  rect(120,200,200,150);
+  stroke(#39B3EA);
+  line(120,200,320,350);
+  stroke(#39B3EA);
+  line(320,200,120,350);
+}
