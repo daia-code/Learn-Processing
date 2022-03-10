@@ -1,0 +1,14 @@
+void setup(){
+  size(600,700);
+  background(255);
+}
+void draw(){
+  noFill();
+  stroke(#33DE95);
+  ellipse(300,200,200,200);
+  ellipse(300,200,100,100);
+  ellipse(300,200,50,50);
+    stroke(#3533DE);
+    line(200,200,400,200);
+     line(300,100,300,300);
+}
