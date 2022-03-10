@@ -1,0 +1,14 @@
+void setup(){
+  size(300,400);
+}
+void draw(){
+  stroke(#33DE98);
+   ellipse(150,260,100,60);
+  ellipse(150,240,100,60);
+  ellipse(150,220,100,60);
+  ellipse(150,200,100,60);
+   ellipse(150,180,100,60);
+   ellipse(150,160,100,60);
+   noStroke();
+   
+}
