@@ -1,0 +1,27 @@
+float[] values = {25.0, 45.0, 5.0, 15.0, 10.0};
+
+void setup() {
+size(400,400);
+}
+void draw() {
+background(0);
+
+ // draw axes (relative to screen edges)
+  stroke(255,0,0);
+  strokeWeight(5);
+  line(0,height,width,height);
+  line(0,0,0,height);
+
+    barChart(values);
+}
+
+void barChart(float[] data){
+  for (int x=0; x<400; x+=80) {    
+    for (int i=0; i<data.length; i++){
+
+      fill(20,128,55);
+    rect(x,350,80,(data[i]/100)*400);  //x,y,width,height
+      }
+    }
+
+}
