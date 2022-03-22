@@ -1,0 +1,14 @@
+void setup(){
+size(300, 200);
+background(0);}
+
+void draw(){
+PFont font= createFont("ArialCE.dtl",20);
+textFont(font);
+int i=0;
+while(i<10){
+fill(random(255),random( 255),random( 255));
+text("Hello World!", 100, 100);
+i++;
+}
+}
