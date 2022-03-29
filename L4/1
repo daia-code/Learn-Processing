@@ -6,14 +6,13 @@ void draw() {
 
   float[] varfX ={200, 200, 200, 400, 400, 400, 200, 400};
   float[] varfY ={200, 400, 200, 200, 200, 400, 400, 400};
-
+  fill(#98CDE8);
+  rect(200,200,200,200);
   for (int i=0; i<varfX.length; i=i+2) {
-    stroke(118, 102, 229);
+    stroke(#2897D1);
     int j=i+1;
     line(varfX[i], varfY[i], varfX[j], varfY[j]);
     j++;
-    //fill(#7666E5);
-    //rect(200,200,200,200);
-    //fill(0);
+ 
   }
 }
