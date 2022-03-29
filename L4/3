@@ -1,0 +1,21 @@
+void setup() {
+  size(700, 500);
+}
+void draw() {
+  stroke(#167EB4);
+  fill(#4ABAF5);
+  ellipse(300, 200, 300, 300);
+  float[] varfX ={200, 200, 200, 390, 390, 390, 390, 200};
+  float[] varfY ={120, 300, 120, 120, 120, 300, 300, 300};
+  for (int i=0; i<varfX.length; i=i+2) {
+    stroke(#167EB4);
+    int j=i+1;
+    line(varfX[i], varfY[i], varfX[j], varfY[j]);
+    j++;
+  }
+  ellipse(295, 210, 187, 178);
+  stroke(#2979A2);
+  line(200, 120, 390, 300);
+  line(390, 120, 200, 300);
+  line(295, 210, 390, 210);
+}
