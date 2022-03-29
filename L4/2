@@ -16,18 +16,18 @@ void draw() {
   float[] varfX4 ={200, 200, 200, 300, 300, 300, 200, 300};
   float[] varfY4 ={200, 300, 200, 200, 200, 300, 300, 300};
 
+  fill(#ABDAF2);
+  rect(100, 100, 300, 300);
   for (int i=0; i<varfX1.length; i=i+2) {
-    stroke(118, 102, 229);
+    stroke(#2EA7E5);
     int j=i+1;
     line(varfX1[i], varfY1[i], varfX1[j], varfY1[j]);
     line(varfX2[i], varfY2[i], varfX2[j], varfY2[j]);
     line(varfX3[i], varfY3[i], varfX3[j], varfY3[j]);
     line(varfX4[i], varfY4[i], varfX4[j], varfY4[j]);
     j++;
-    //fill(#7666E5);
-    //rect(200,200,200,200);
-    //fill(0);
   }
+  stroke(#54B5E8);
   line(100, 100, 400, 400);
   line(400, 100, 100, 400);
 }
