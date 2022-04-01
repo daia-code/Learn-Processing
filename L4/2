@@ -4,30 +4,16 @@ void setup() {
 }
 void draw() {
 
-  float[] varfX1 ={100, 100, 100, 400, 400, 400, 100, 400};
-  float[] varfY1 ={100, 400, 100, 100, 100, 400, 400, 400};
-
-  float[] varfX2 ={130, 130, 130, 370, 370, 370, 130, 370};
-  float[] varfY2 ={130, 370, 130, 130, 130, 370, 370, 370};
-
-  float[] varfX3 ={160, 160, 160, 340, 340, 340, 160, 340};
-  float[] varfY3 ={160, 340, 160, 160, 160, 340, 340, 340};
-
-  float[] varfX4 ={200, 200, 200, 300, 300, 300, 200, 300};
-  float[] varfY4 ={200, 300, 200, 200, 200, 300, 300, 300};
-
+  float[] arr ={100,120,140,160};
+  int l=300;
   fill(#ABDAF2);
-  rect(100, 100, 300, 300);
-  for (int i=0; i<varfX1.length; i=i+2) {
+  for (int i=0; i<arr.length; i=i+1) {
     stroke(#2EA7E5);
-    int j=i+1;
-    line(varfX1[i], varfY1[i], varfX1[j], varfY1[j]);
-    line(varfX2[i], varfY2[i], varfX2[j], varfY2[j]);
-    line(varfX3[i], varfY3[i], varfX3[j], varfY3[j]);
-    line(varfX4[i], varfY4[i], varfX4[j], varfY4[j]);
-    j++;
+    rect(arr[i],arr[i],l,l);
+    l=l-40;
   }
-  stroke(#54B5E8);
-  line(100, 100, 400, 400);
-  line(400, 100, 100, 400);
+  stroke(#FFFFFF);
+  line(100,100,400,400);
+  line(400,100,100,400);
+
 }
