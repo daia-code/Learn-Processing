@@ -9,10 +9,10 @@ void draw() {
   fill(#98CDE8);
   rect(200,200,200,200);
   for (int i=0; i<varfX.length; i=i+2) {
-    stroke(#ABA5ED);
-    int j=i+1;
+   for(int  j=i+1;j<varfY.length-4;j++){
+    stroke(#2113BF);
     line(varfX[i], varfY[i], varfX[j], varfY[j]);
-    j++;
- 
+  
+   }
   }
 }
