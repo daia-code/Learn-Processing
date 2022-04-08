@@ -1,10 +1,3 @@
-/**
-* simple 2D shooter game
-*
-* @author aa_debdeb
-* @date 2016/08/30
-*/
-
 
 Myself myself;
 ArrayList<Enemy> enemies;
