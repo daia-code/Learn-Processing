@@ -1,9 +1,0 @@
-void setup(){
-size(700, 700);
-}
-void draw(){
-PImage foto = loadImage("foto.jpg");  
-imageMode(CENTER);
-image(foto, 350, 350,700,700);
-
-}
