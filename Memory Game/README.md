@@ -1,6 +1,6 @@
 # Memory-Game
 
-Author: Qianyi Yu
+Author: daia-code
 
 Picture Credit :
 
@@ -15,8 +15,14 @@ Picture Credit :
  img5:http://www.go2hn.com/jiachangcai/jcc-00003.htm
  
  img6:http://zh.wikipedia.org/wiki/%E7%89%9B%E9%9B%9C
-
- https://code.google.com/archive/p/vector-playing-cards/downloads
+ 
+ img7:https://media.istockphoto.com/photos/food-photography-picture-id1226284086?k=20&m=1226284086&s=170667a&w=0&h=2_fSp7SjW94lmEJN_2FOGUTebtu2LzdpSrllNtj5Cro=
+ 
+ img8:http://pizzeriaitalianasacele.ro/wp-content/uploads/2014/09/margheritawiki.jpg
+ 
+ img9:https://media-cdn.tripadvisor.com/media/photo-s/19/f3/62/42/veggie-burger.jpg
+ 
+ img10:https://cdn.pixabay.com/photo/2014/08/26/09/33/indonesia-427784_960_720.jpg
  
 ##GAME RULES:
  
