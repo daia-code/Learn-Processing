@@ -185,9 +185,9 @@ void gameOver()
   rect(300, 300, 1000, 200);
   fill(255);
   textSize(50);
-  text("YOU WIN "+win, 250, 340);
+  text("YOU WIN ", 250, 340);
   fill(random(255),random(255),random(205));
   textSize(30);
-  text("Click to restart "+lose,235,390);
+  text("Click to restart ",235,390);
   over=true;
 }
