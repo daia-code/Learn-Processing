@@ -52,14 +52,14 @@ void randomize(int[] a)
 
 void draw()
 {
-  background(0);
+ 
   rectMode(CENTER);
   int trueTiles=0;
   for (int i=0; i<tiles.length; i++)
   {
     if (tiles[i].reveal==false)//if the tile's reveal boolean is false, the tiles filled with white color
     {
-      fill(color(255));
+      fill(color(255, 100, 20));
     }
 
     if (i<5)//place the tiles in the form of 4*3
@@ -85,13 +85,8 @@ void draw()
 
       show[i]++;
       imageMode(CENTER);
-      if (show[i]%3==0&&show[i]<23)
-      {
-        fill(255, 255, 0);//make the transition effect
-      } else
-      {
-        image(tiles[i].tileColor, tiles[i].x, tiles[i].y);//show the picture
-      }
+
+      image(tiles[i].tileColor, tiles[i].x, tiles[i].y);//show the picture
     } else
     {
       show[i]=0;
@@ -108,14 +103,14 @@ void draw()
     //Clicking on a third tile reveals it and hides the previously revealed tiles when the previous two tiles' number is not the same
     if ((track[time-3]!= track[time-2]))
     {
-   
+
       tiles[trackClicked[time-3]].reveal=false;
       tiles[trackClicked[time-2]].reveal=false;
     }
     //When two revealed tiles have the same color, they remain revealed until the game is over
     else
     {
-  
+
       tiles[trackClicked[time-3]].reveal=true;
       tiles[trackClicked[time-2]].reveal=true;
     }
@@ -139,6 +134,7 @@ class tile
   int number;
   int tileWidth;
   int tileHeight;
+  PImage spate;
   PImage[] images= {
     loadImage("img1.jpg"), loadImage("img2.jpg"), loadImage("img3.jpg"), loadImage("img4.jpg"), loadImage("img5.jpg"), loadImage("img6.jpg"), loadImage("img7.jpg"), loadImage("img8.jpg"), loadImage("img9.jpg"), loadImage("img10.jpg")
   };
@@ -160,13 +156,13 @@ void mouseClicked()
     if (mouseX<=tiles[i].x+tiles[i].tileWidth/2&&mouseX>=tiles[i].x-tiles[i].tileWidth/2&&mouseY>=tiles[i].y-tiles[i].tileHeight/2&&mouseY<=tiles[i].y+tiles[i].tileHeight/2&&tiles[i].reveal==false)
     {
       tiles[i].reveal=true;
-      
+
       time++;
       track[time-1]=tiles[i].number;
       trackClicked[time-1]=i;
     }
   }
- 
+
   //the game restart when the player win the game and click at the screen
   if (over==true)
   {
@@ -186,8 +182,8 @@ void gameOver()
   fill(255);
   textSize(50);
   text("YOU WIN ", 250, 340);
-  fill(random(255),random(255),random(205));
+  fill(random(255), random(255), random(205));
   textSize(30);
-  text("Click to restart ",235,390);
+  text("Click to restart ", 235, 390);
   over=true;
 }
